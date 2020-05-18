@@ -76,7 +76,8 @@ Like arrays, Linked Lists store data elements in sequential order. They
 start at the 'Head' node, and chains down each node until it hits the 
 'tail' node. Every node points to the next node.
 
-Ofcourse Linked Lists come with their advantages and disadvantages, some of these being:
+Of course Linked Lists come with their advantages and disadvantages, some of these being:
+
 ADVANTAGES, 
 They are a dynamic data structure, which means you don't need to give an intial size of a linked list.
 Insertion and deletion of nodes is a lot easier, as you just have to update 
@@ -112,3 +113,19 @@ class LinkedList {
     // size_Of_List 
     // PrintList
 }  -->
+----------------------------------------------------------------------------
+RECURSIVE
+
+Introduction to JS Recursive,
+Recursive is a technique for iterating over an operation by having a function call itself repeatedly until it arrives at a result. Most loops can be rewritten in recursive style.
+
+There are advantages and disadvantages of using Recursive, some of these are:
+
+ADVANTAGES,
+Once learnt they can reduce a lot of time in certain situations. Using Recursives keywords rather than other functions and keywords in JavaScript can reduce a lot of time.
+Recursive adds clarity and reduces the time needed to write and debug code, if you were going to write a small code, it is a good way to 'de-clutter' your code.
+
+
+DISADVANTAGES,
+Recursive uses more memory, because the function has to add a stack with each recursive call and keeps the values there until the call is finished.
+If Recursive is not implemented correctly it can be much slower than iteration.
