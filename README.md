@@ -76,5 +76,13 @@ start at the 'Head' node, and chains down each node until it hits the
 'tail' node. Every node points to the next node.
 
 Ofcourse Linked Lists come with their advantages and disadvantages, some of these being:
+ADVANTAGES, 
+They are a dynamic data structure, which means you don't need to give an intial size of a linked list.
+Insertion and deletion of nodes is a lot easier, as you just have to update 
+the address present in the next pointer.
+The is no memory wasted as comapired to an array, as memory is allocated only when required.
 
+DISADVANTAGES,
+More memory is required to store elements in linked list compaired to an array, as each node requires a pointer, it uses more memory.
+The time required to access a node is longer, because you cant randomly access any element as you can in arrays by using an index.
 
