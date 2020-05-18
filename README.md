@@ -69,6 +69,7 @@ If a 'Tree' is free to have more than one parent, it becomes a 'Graph'
 Hash Tables
 A hash table is a dictionary-like structure that pairs keys to values.
 ----------------------------------------------------------------------------
+LINKED LISTS
 
 Introduction to Linked Lists, 
 Like arrays, Linked Lists store data elements in sequential order. They 
@@ -86,3 +87,28 @@ DISADVANTAGES,
 More memory is required to store elements in linked list compaired to an array, as each node requires a pointer, it uses more memory.
 The time required to access a node is longer, because you cant randomly access any element as you can in arrays by using an index.
 
+A Real-World of Linked Lists would be a Train. Each coach is connected to 
+its previous and next coach. In terms of programming, each coach would be a 
+node value and the connectors of the trains would be pointers to the next 
+node.
+
+Below is an example of a Linked List pseudocode.
+<!-- // linkedlist class 
+class LinkedList { 
+    constructor() 
+    { 
+        this.head = null; 
+        this.size = 0; 
+    } 
+  
+    // functions to be implemented 
+    // add(element) 
+    // insertAt(element, location) 
+    // removeFrom(location) 
+    // removeElement(element) 
+  
+    // Helper Methods 
+    // isEmpty 
+    // size_Of_List 
+    // PrintList
+}  -->
