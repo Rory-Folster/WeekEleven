@@ -68,3 +68,13 @@ If a 'Tree' is free to have more than one parent, it becomes a 'Graph'
 
 Hash Tables
 A hash table is a dictionary-like structure that pairs keys to values.
+----------------------------------------------------------------------------
+
+Introduction to Linked Lists, 
+Like arrays, Linked Lists store data elements in sequential order. They 
+start at the 'Head' node, and chains down each node until it hits the 
+'tail' node. Every node points to the next node.
+
+Ofcourse Linked Lists come with their advantages and disadvantages, some of these being:
+
+
