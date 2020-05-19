@@ -88,10 +88,7 @@ DISADVANTAGES,
 More memory is required to store elements in linked list compaired to an array, as each node requires a pointer, it uses more memory.
 The time required to access a node is longer, because you cant randomly access any element as you can in arrays by using an index.
 
-A Real-World of Linked Lists would be a Train. Each coach is connected to 
-its previous and next coach. In terms of programming, each coach would be a 
-node value and the connectors of the trains would be pointers to the next 
-node.
+A Real-World example of Linked Lists would be a Train. Each coach is connected to its previous and next coach. In terms of programming, each coach would be a node value and the connectors of the trains would be pointers to the next node.
 
 Below is an example of a Linked List pseudocode.
 <!-- // linkedlist class 
@@ -129,3 +126,34 @@ Recursive adds clarity and reduces the time needed to write and debug code, if y
 DISADVANTAGES,
 Recursive uses more memory, because the function has to add a stack with each recursive call and keeps the values there until the call is finished.
 If Recursive is not implemented correctly it can be much slower than iteration.
+
+What can recursive be used for? 
+While it can be used in many situations, it is most effective for solving problems involving iterative branching, such as fractal math, sorting, or traversing the nodes of complex or non-linear data structures.
+
+
+A real-world example of Recursive would be, there are lots of mathy examples here, but you wanted a real world example, so with a bit of thinking, this is possibly the best I can offer:
+
+You find a person who has contracted a given contageous infection, which is non fatal, and fixes itself quickly( Type A) , Except for one in 5 people ( We'll call these type B ) who become permanently infected with it and shows no symptoms and merely acts a spreader.
+
+This creates quite annoying waves of havoc when ever type B infects a multitude of type A.
+
+Your task is to track down all the type Bs and immunise them to stop the backbone of the disease. Unfortunately tho, you cant administer a nationwide cure to all, because the people who are typeAs are also deadly allergic to the cure that works for type B.
+
+The way you would do this, would be social discovery, given an infected person(Type A), choose all their contacts in the last week, marking each contact on a heap. When you test a person is infected, add them to the "follow up" queue. When a person is a type B, add them to the "follow up" at the head ( because you want to stop this fast ).
+
+After processing a given person, select the person from the front of the queue and apply immunization if needed. Get all their contacts previously unvisited, and then test to see if they're infected.
+
+Repeat until the queue of infected people becomes 0, and then wait for another outbreak..
+
+A recursive pseudo code is,  
+
+<!-- function countDown(fromNumber) {
+    console.log(fromNumber);
+
+    let nextNumber = fromNumber - 1;
+
+    if (nextNumber > 0) {
+        countDown(nextNumber);
+    }
+}
+countDown(3); -->
